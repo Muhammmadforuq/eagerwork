@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body{
+      @apply font-sohne-breit bg-black text-white;
+    }
+
+    p{
+      @apply font-manrope;
+    }
+}
+
+.bg-radial{
+  background: radial-gradient(113.1% 103.23% at 45.52% -1.51%, rgba(255, 255, 255, 0.4704) 0%, rgba(255, 255, 255, 0.0392) 100%);
+
+}
+
+
+.linear-gr{
+  @apply before:absolute before:bottom-0 before:left-0 before:w-full before:h-16 lg:before:h-40 before:bg-for-image before:z-10 before:rotate-180
+  after:absolute after:top-0 after:left-0 after:w-full after:h-16 lg:after:h-40 after:bg-for-image after:z-0
+}
+
+/* tab css */
+[data-tab-content] {
+  display: none;
+}
+
+.active[data-tab-content] {
+  display: block;
+}
+
+.tab.active {
+  @apply bg-brand-blue-500
+}
